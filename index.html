@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="120x120" href="../src/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../src/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../src/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../src/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../src/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/normalize.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="../src/js/script.js" defer></script>
+  <title>(de)Codificador Piglatin</title>
+</head>
+<body class="bg-rose-200">
+  <div class="p-3 w-full relative">
+    
+    <img src="../src/image/logo_oracle-alura-preto.svg" alt="Logo Oracle + Alura" class="h-4 fixed top-0 right-1">
+    <nav class="container mx-auto">
+      <h2 class="title text-rose-700 font-semibold text-5xl text-center my-4">(de)Codificador de Piglatin</h2>
+    </nav>
+    <main class="md:flex w-full container mx-auto gap-3 md:gap-10">
+      <div class="input md:w-3/5 mt-2">
+        <div class="wrapper">
+          <textarea class="w-full h-[25vh] md:h-[50vh] p-3 rounded-md"></textarea>
+        </div>
+        <button class="button main cr bg-rose-500 hover:bg-rose-600 text-white font-bold py-2 px-4 rounded-lg my-2">Criptografar</button>
+        <button class="button main ds border-2 border-rose-400 hover:bg-rose-50 py-2 px-4 rounded-lg font-thin">Descriptografar</button>
+      </div>
+      <div class="output md:w-3/5 bg-slate-50 h-[25vh] md:h-[50vh] mt-2 rounded-md">
+        <div class="text-area p-3">
+          <p></p>
+          <span><p></p></span>
+        </div>
+      </div>
+    </main>
+    <section class="container mx-auto my-20 w-4/5 text-justify font-medium">
+      <h2 class="text-center font-bold text-3xl">Pig latin</h2>
+      <p>Piglatin é uma cifra fonética bem conhecida na América do Norte, aqui no brasil é como se fosse um derivado da lingua do pê só que com duas regrinhas básicas:</p>
+      <ol class="list-decimal">
+        <li class="ml-10">Se a palavra começar com uma vogal, só adicionamos "Yay" no final da palavra.</li>
+        <li class="ml-10">Se começar com uma consoante, todas as consoantes antes da primeira vogal vão para o final da palavra e ainda adicionamos "Ay" depois delas.</li>
+      </ol>
+      <p>Por exemplo, se formos transformar as palavras <span>"Estado", "Trabalho"</span> e <span>"Mesa"</span> em pig latin, elas ficarão respectivamente como <span>"Estadoway", "Abalhotray"</span> e <span>"Esamay"</span></p>
+    </section>
+  </div>
+  
+  <footer class="relative bg-rose-900 w-full p-4">
+    <div class="container mx-auto text-center w-4/5">
+      <p class="text-sm text-white">Feito com ☕ por <a href="https://www.linkedin.com/in/igorcamoes/" target="_blank" class="underline">Igor Camões</a></p>
+
+      <img src="../src/image/pig.png" alt="Ícone de porco" class="absolute -bottom-0 left-2/3 -z-10">
+    </div>
+  </footer>
+</body>
+</html>
