@@ -1,0 +1,28 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body{
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.5em;
+
+  @apply font-semibold;
+}
+
+textarea{
+  resize: none;
+}
+
+.title{
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+section > p{
+  @apply my-5;
+}
+
+section span{
+  @apply italic;
+}
